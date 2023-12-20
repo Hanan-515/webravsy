@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "GFS Didot", serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  margin-right: 50px;
+  padding: 0;
+}
+
+.nav li a.current {
+  border-bottom: 2px solid #000000;
+}
+
+.navigation li.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  margin-right: auto;
+}
+
+.navigation li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "GFS-Didot";
+  color: #000000;
+}
+
+.navigation li:nth-child(n + 3) {
+  margin-left: 40px;
+}
+
+.logo {
+  width: 100px; /* Adjust the size of your logo */
+          height: 100px; /* Adjust the size of your logo */
+          transform-style: preserve-3d;
+          animation: rotateLogo 8s linear infinite;
+}
+
+.logo-container img {
+  position: absolute;
+          top: 18px;
+          left: 1.8%;
+          transform: translate(-50%, -50%);
+          perspective: 100px;
+} 
+@keyframes rotateLogo {
+  from {
+      transform: translateZ(0) rotateX(0) rotateY(0);
+  }
+  to {
+      transform: translateZ(0) rotateX(0) rotateY(360deg);
+  }
+}
+
+.logo-container h1 {
+  font-family: "GFS Didot";
+  position:absolute;
+          top: 2.6%;
+          left:8.3%;
+  font-size: 50px;
+  margin: 40px;
+  color: rgb(0, 0, 0);
+
+}
+
+.navigation .search input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  transition: all 0.3s ease-in-out;
+  width: 200px;
+}
+
+.navigation .search input[type="text"]:focus {
+  width: 300px;
+  background-color: #fff;
+  border-color: #555;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbutton {
+  font-size: 20px;
+  font-family: "GFS-Didot";
+  color: #000000;
+  text-decoration: none;
+  padding: 12px 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 8px 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #a1a1a1;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-bottom: 60px;
+  width:50%;
+}
+
+.product{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.product .images {
+  width:50%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.product .images img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product .images img:hover {
+  transform: scale(1.1);
+}
+
+.product .info {
+  width:50%;
+  padding:20px;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.product .info h2 {
+  font-size: 24px;
+  margin-bottom:10px;
+  color: #333333;
+}
+
+.product .info p {
+  margin-bottom:15px;
+  color: #666;
+}
+
+.cart-section {
+  display: flex;
+  align-items: center;
+}
+
+.cart-counter {
+  display: flex;
+  align-items: center;
+  border:1px solid black;
+
+}
+
+.cart-counter span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.minus-sign,
+.plus-sign {
+  font-size: 20px;
+  background-color: #fff6f6;
+  color: #000000;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.minus-sign:hover,
+.plus-sign:hover {
+  background-color: #b4b4b4;
+}
+
+.quantity {
+  font-size: 20px;
+  color: #000000;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.proceed{
+  padding :30px 20px;
+  width:320px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  background-color: black;
+  border:none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.proceed:hover {
+  background-color: #333;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff8f8;
+  color: #000000;
+  font-size: 14px;
+}

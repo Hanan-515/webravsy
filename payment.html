@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--TITLE-->
+    <title>Ravsy - Checkout</title>
+    <!--FAVICON-->
+    <link rel="icon" href="images/icon.png">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="stylepay.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!--HEADER-->
+  <header>
+    <!--NAVIGATION BAR-->
+    <div class="navigation">
+        <div class="logo">
+            <!--LOGO: IF CLICKED, GOES TO HOMEPAGE-->
+            <a href="home.html"><img src="images/icon.png"></a>
+            <a href="home.html"><h1>RAVSY</h1></a>
+        </div>
+        <h2>CHECKOUT</h2>
+        <ul>
+            <!--CART AND IT'S ICON-->
+            <li class="logo"></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+
+        </li>
+        </ul>
+    </div>
+    </header>
+    <main>
+        <!--CONTAINER FOR CHECKOUT FORM AND PRICE SECTION-->
+        <div class="container">
+            <div class="checkout">
+                <div class="form">
+                    <div class="checkout-details">
+                        <!--CHECKOUT FORM-->
+                        <form class="checkout-form">
+                            <div class="form-container">
+                            <h3><b>Contact</b></h3>
+                            <input type="email" class="input-field" placeholder="Email" required>
+                            <h3><b>Delivery</b></h3>
+                            <input type="text" class="input-field" placeholder="First Name" required>
+                            <input type="text" class="input-field" placeholder="Last Name" required>
+                            <input type="tel" class="input-field" placeholder="Phone Number" required>
+                            <input type="text" class="input-field" placeholder="Country" required>
+                            <input type="text" class="input-field" placeholder="Address" required>
+                            <input type="text" class="input-field" placeholder="City" required>
+                            <input type="text" class="input-field" placeholder="State/Province" required>
+                            <!--PAYMENT OPTION-->
+                            <div class="payment-options">
+                                <h3>Payment Method</h3>
+                                <label>
+                                    <input type="radio">
+                                    Cash on Delivery
+                                </label>
+                                <label>
+                                    <input type="radio">
+                                    Credit Card
+                                </label>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--CONTAINER FOR PRICES-->
+            <div class="price-division">
+                <div class="price-section">
+                    <div class="prices"></div>
+                        <h3>Subtotal : <b>Rs,13,098</b></h3>    
+                        <h3>Shipping fee :Rs,150</h3>    
+                        <h3>Total : <b>Rs,13,248</b></h3>    
+                    </div>
+                    <!--PLACE ORDER BUTTON WHICH NAVIGATES TO HOMEPAGE-->
+                    <a href="home.html"><button class="order-button" type="submit">PLACE ORDER</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <p id="p1">Phone: 065-1248343</p>
+        <p id="p2">Email: info@ravsy.com</p>
+        <p>&copy; 2023 Ravsy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

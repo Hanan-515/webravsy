@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "GFS Didot";
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    background-color: #000;
+    color:#fff;
+    text-align: center;
+    padding:20px 0;
+}
+
+header h2{
+    color:white;
+    text-align: center;
+    font-size:40px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -64px;
+    background-color: rgb(0, 0, 0);
+    padding: 0 20px;
+}
+  
+.navigation ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.navigation ul li{
+    display: inline-block;
+    margin-right:20px;
+}
+
+.navigation li {
+    margin-right: 50px;
+    padding: 0;
+}
+  
+
+  
+.navigation li.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-right: auto;
+}
+  
+.navigation li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "GFS-Didot";
+    color: #ffffff;
+}
+  
+.navigation li:nth-child(n+3) {
+    margin-left: 40px;
+}
+    
+.navigation .logo {
+    display: flex;
+    align-items: center;
+}
+  
+.navigation .logo img {
+    width: 100px;
+    height: 100px;
+    filter: brightness(100000%);
+    margin-right: 10px;
+}
+    
+.navigation .logo h1 {
+    font-family: "GFS Didot";
+    font-size: 40px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+  
+.logo a {
+    text-decoration: none; 
+}
+
+    
+h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    color: #000;
+}
+
+
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    width:100%;
+    margin-top:30px;  
+}
+
+
+.checkout {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+    
+.checkout-details {
+    color: #000000;
+    text-align: center;
+}
+
+.form{
+    width:100%;
+}
+
+.input-field {
+    width: 450px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    border-bottom: 1px solid #000000; 
+    color: #000000; 
+}
+  
+.input-field::placeholder {
+    color: #000000; 
+    opacity: 0.5; 
+}
+    
+.price-division{
+    width:50%;
+    height:100%;
+    margin-top:15px;
+    padding:350px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow : 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-left:1px solid #ddd;
+}
+
+.price-section{
+    text-align: center;
+    background-color:white;
+}
+
+.prices h3{
+    font-size:3.5em;
+    margin-bottom: 20px;
+    color:#333;
+}
+
+.order-button {
+    align-self: center;
+    width: 300px;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+  
+.order-button:hover {
+    background-color: #313030;
+}
+  
+/*Styles for footer*/
+.footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+}

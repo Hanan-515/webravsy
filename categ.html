@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Title-->
+  <title>Ravsy - Categories</title>
+  <!--Favicon-->
+  <link rel="icon" href="images/icon.png">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="stylecat.css">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+  <!--For cart icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--Navigation bar-->
+        <div class="navigation">
+            <!--Logo of the brand-->
+            <div class="logo">
+                <!--If clicked, goes to Home page-->
+                <a href="home.html"><img src="images/icon.png"></a>
+                <a href="home.html"><h1>RAVSY</h1></a>
+            </div>
+            <ul>
+                <li class="logo"></li>
+                <!--Links to pages-->
+                <li><a href="home.html">Home</a></li>
+                <!--Drop down menu for categories-->
+                <li class="dropdown">
+                    <a href="#" class="dropmenu">Categories</a>
+                    <div class="dropdown-menu">
+                        <a href="menprod.html">Men</a>
+                        <a href="womenprod.html">Women</a>
+                    </div>
+                </li>
+                <!--Cart and Icon-->
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <!--Search bar-->
+                <li class="search">
+                    <input type="text" placeholder="Search">
+                </li>
+            </ul>
+        </div>
+    </header>    
+    <!--Main-->
+    <main class="categories">
+        <!--Division for men section-->
+        <div class="men">
+            <!--Image in men section-->
+            <a href="menprod.html"><img src="images/mens.png" alt="Men's Collection"></a>
+            <h2>MEN</h2>
+        </div>
+        <!--Division for women section-->
+        <div class="women">
+            <!--Images in women section-->
+            <a href="womenprod.html"><img src="images/women.png" alt="Women's Collection"></a>
+            <h2>WOMEN</h2>
+        </div>      
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <p id="p1">Phone: 065-1248343</p>
+        <p id="p2">Email: info@ravsy.com</p>
+        <p>&copy; 2023 Ravsy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

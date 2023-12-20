@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--TITLE-->
+  <title>Ravsy - Men</title>
+<!--Favicon-->
+  <link rel="icon" href="images/icon.png">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="stylecart.css">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!--Header-->
+    <header>
+      <!--Navigation bar-->
+        <div class="navigation">
+          <div class="logo-container">
+            <!--If clicked, goes to Home-->
+            <a href="home.html"><img src="images/icon.png" class="logo"></a>
+            <a href="home.html"><h1>RAVSY</h1></a>
+        </div>
+            <ul>
+              <!--Links to all pages-->
+                <li class="logo"></li>
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                  <!--Drop down menu for caetgories-->
+                    <a href="#" class="dropbutton">Categories</a>
+                    <div class="dropdown-menu">
+                        <a href="menprod.html">Men</a>
+                        <a href="womenprod.html">Women</a>
+                    </div>
+                </li>
+                <!--Cart and it's icon-->
+                <li><a href="cart.html" class="current"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="search">
+                  <!--Search bar-->
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </li>
+            </ul>
+        </div>
+    </header>    
+    <!--Main-->
+    <main class="main-content">
+      <!--Product COntainer which contains all products-->
+        <div class="products-container">
+        <div class="product">
+          <!--Product image-->
+            <div class="images">
+          <img src="images/bluejac.webp" alt="Product 1 Image">
+        </div>
+        <!--PRODUCT DETAILS-->
+        <div class="info">
+          <!--NAME, PRICE AND CART COUNTER-->
+          <h2>Blue Jacket</h2>
+          <p class="price">Rs.5,099</p>
+          <!--CART COUNTER-->
+          <div class="cart-section">
+            <div class="cart-counter">
+                <span class="minus-sign">-</span>
+                <span class="quantity">1</span>
+                <span class="plus-sign">+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="product">
+        <!--PRODUCT IMAGE-->
+        <div class="images">
+          <img src="images/blackcoat.webp" alt="Product 3 Image">
+        </div>
+        <!--PRODUCT DETAILS:  NAME , PRICE AND CART COUNTER-->
+        <div class="info">
+          <h2>Black Coat</h2>
+          <p class="price">Rs.7,999</p>
+          <div class="cart-section">
+            <div class="cart-counter">
+                <span class="minus-sign">-</span>
+                <span class="quantity">1</span>
+                <span class="plus-sign">+</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--Button that navigates to checkout page-->
+    <a href="payment.html"><button class="proceed">Proceed to Checkout</button></a>    
+</main>
+
+<!--Footer-->
+<footer class="footer">
+    <p id="p1">Phone: 065-1248343</p>
+    <p id="p2">Email: info@ravsy.com</p>
+    <p>&copy; 2023 Ravsy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
