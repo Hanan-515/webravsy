@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    background: url(images/home.png);
+    height: 100vh;
+  }
+
+  
+.header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+}
+  
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+
+}
+
+    
+.logo a {
+    text-decoration: none; 
+}
+  
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+li {
+    margin-right: 50px;
+    padding: 0;
+    margin-left: 40px;
+
+}
+  
+li a.current {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+  
+.navigation li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "GFS-Didot";
+    color: #000000;
+}
+    
+.logo {
+    width: 130px; /* Adjust the size of your logo */
+            height: 130px; /* Adjust the size of your logo */
+            transform-style: preserve-3d;
+            animation: rotateLogo 8s linear infinite;
+}
+  
+.logo-container img {
+    position: absolute;
+            top: 2.5%;
+            left: 1.8%;
+            transform: translate(-50%, -50%);
+            perspective: 100px;
+} 
+@keyframes rotateLogo {
+    from {
+        transform: translateZ(0) rotateX(0) rotateY(0);
+    }
+    to {
+        transform: translateZ(0) rotateX(0) rotateY(360deg);
+    }
+}
+  
+.logo-container h1 {
+    font-family: "GFS Didot";
+    position:absolute;
+            top: 3%;
+            left:8.3%;
+    font-size: 50px;
+    margin: 40px;
+    color: rgb(0, 0, 0);
+  
+}
+
+.search input {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  transition: all 0.4s ease-in-out;
+}
+  
+.search input:focus {
+    width: 300px;
+    border-color: #000000;
+}
+
+.dropbtn {
+    font-size: 20px;
+    font-family: "GFS-Didot";
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+  
+.dropdown-menu {
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    transform: translateY(10px);
+    opacity:0;
+}
+  
+.dropdown-menu a {
+    color: white;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+  
+.dropdown-menu a:hover {
+    background-color: #a1a1a1;
+}
+  
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+}
+  
+  
+main {
+    text-align: center;
+    padding-top: 100px;
+}
+
+main h1{
+  font-size:100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  font-weight: bold;
+  font-size: 170px;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+  filter: drop-shadow(0 0 10px #15c095);
+  animation: glow 2s alternate infinite;
+}
+@keyframes glow {
+    0%{
+        filter: drop-shadow(0 0 10px #ffffff);
+    
+    }
+    100%{
+        filter: drop-shadow(0 0 25px #ffffff)
+
+    }
+}
+
+main h1:hover{  
+color:#ffffff;
+}
+
+main button {
+    height:100px;
+    width: 300px;
+    position: absolute;
+    top: 98%;
+    left: 40%;
+    border:none;
+    font-family:"GFS Didot";
+    font-size: 45px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main button:hover {
+    background-color: #a13c3c;
+   
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+}
